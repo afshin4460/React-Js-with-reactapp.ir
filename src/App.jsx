@@ -10,8 +10,8 @@ function App() {
 
   return (
     <div className='App'>
-      <Website name='Afshin' age='28' click={() => handleClick('Afshin')} />
-      <Website name='shiva' age='27' click={() => handleClick('Shiva')} />
+      <Website name='Afshin' age={28} click={() => handleClick('Afshin')} />
+      <Website name='shiva' age={27} click={() => handleClick('Shiva')} />
     </div>
   );
 }
