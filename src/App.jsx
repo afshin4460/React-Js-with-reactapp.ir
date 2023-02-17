@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 //import Website from './components/webstie';
-import Counter from './components/counter';
+import Counter from './components/counter/counter';
 
 function App() {
 

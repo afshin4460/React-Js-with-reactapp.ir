@@ -13,9 +13,14 @@ function Counter() {
         console.log(name);
     };
 
+    const myStyle = {
+        color: 'red',
+        fontWeight: 'bold'
+    }
+
     return (
         <div>
-            <p>You are {count} clicked</p>
+            <p style={myStyle}>You are {count} clicked</p>
             <button onClick={handleClick}>click me</button>
             <input type="text" name='name' value={name} onChange={handleChange} />
         </div>
