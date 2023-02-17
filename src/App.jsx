@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import Website from './components/webstie';
 
 function App() {
   return (
     <div className='App'>
-      <h1>Hello</h1>
+      <Website />
     </div>
   );
 }
