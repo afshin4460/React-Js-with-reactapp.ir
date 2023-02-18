@@ -2,7 +2,8 @@ import React, {useState} from 'react';
 import './App.css';
 //import Website from './components/webstie';
 //import Counter from './components/counter/counter';
-import Greeting from './components/greeting';
+//import Greeting from './components/greeting';
+import MailBox from './components/mailBox';
 
 function App() {
 
@@ -17,10 +18,11 @@ function App() {
   const handleToggleClick = () => {
     setIsToggleOn(!isToggleOn);
   }; */
-  const [isLogedIn, setIsLogedIn] = useState(true);
+  /* const [isLogedIn, setIsLogedIn] = useState(true);
   const handleLoginClick = () => {
     setIsLogedIn(!isLogedIn);
-  };
+  }; */
+  const messages = ['React', 'RReact', 'RRReact'];
 
   return (
     <div className='App'>
@@ -29,8 +31,9 @@ function App() {
       {/* <Counter /> */}
       {/* <a href="https://reactapp.ir" onClick={actionLink}>click me</a>
       <button onClick={handleToggleClick}>{isToggleOn ? 'ON' : 'OFF'}</button> */}
-      <Greeting isLoggedIn={isLogedIn} />
-      <button onClick={handleLoginClick}>{isLogedIn ? 'LogOut' : 'LogIn'}</button>
+      {/* <Greeting isLoggedIn={isLogedIn} />
+      <button onClick={handleLoginClick}>{isLogedIn ? 'LogOut' : 'LogIn'}</button> */}
+      <MailBox unreadMessage={messages} />
     </div>
   );
 }
