@@ -4,7 +4,8 @@ import './App.css';
 //import Counter from './components/counter/counter';
 //import Greeting from './components/greeting';
 //import MailBox from './components/mailBox';
-import NumberList from './components/numberList';
+//import NumberList from './components/numberList';
+import NameForm from './components/forms/nameForm';
 
 function App() {
 
@@ -35,7 +36,8 @@ function App() {
       {/* <Greeting isLoggedIn={isLogedIn} />
       <button onClick={handleLoginClick}>{isLogedIn ? 'LogOut' : 'LogIn'}</button> */}
       {/* <MailBox unreadMessage={messages} /> */}
-      <NumberList />
+      {/* <NumberList /> */}
+      <NameForm />
     </div>
   );
 }
