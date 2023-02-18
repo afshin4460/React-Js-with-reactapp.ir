@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import calsses from './counter.module.css';
 
 function Counter() {
 
@@ -13,14 +14,14 @@ function Counter() {
         console.log(name);
     };
 
-    const myStyle = {
+    /* const myStyle = {
         color: 'red',
         fontWeight: 'bold'
-    }
+    } */
 
     return (
         <div>
-            <p style={myStyle}>You are {count} clicked</p>
+            <p /* style={myStyle} */ className={calsses.tagStyle}>You are {count} clicked</p>
             <button onClick={handleClick}>click me</button>
             <input type="text" name='name' value={name} onChange={handleChange} />
         </div>
