@@ -3,7 +3,8 @@ import './App.css';
 //import Website from './components/webstie';
 //import Counter from './components/counter/counter';
 //import Greeting from './components/greeting';
-import MailBox from './components/mailBox';
+//import MailBox from './components/mailBox';
+import NumberList from './components/numberList';
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
   const handleLoginClick = () => {
     setIsLogedIn(!isLogedIn);
   }; */
-  const messages = ['React', 'RReact', 'RRReact'];
+  /* const messages = ['React', 'RReact', 'RRReact']; */
 
   return (
     <div className='App'>
@@ -33,7 +34,8 @@ function App() {
       <button onClick={handleToggleClick}>{isToggleOn ? 'ON' : 'OFF'}</button> */}
       {/* <Greeting isLoggedIn={isLogedIn} />
       <button onClick={handleLoginClick}>{isLogedIn ? 'LogOut' : 'LogIn'}</button> */}
-      <MailBox unreadMessage={messages} />
+      {/* <MailBox unreadMessage={messages} /> */}
+      <NumberList />
     </div>
   );
 }
