@@ -2,10 +2,11 @@ import React, {useState} from 'react';
 import './App.css';
 //import Website from './components/webstie';
 //import Counter from './components/counter/counter';
-//import Greeting from './components/greeting';
+import Greeting from './components/greeting';
 //import MailBox from './components/mailBox';
 //import NumberList from './components/numberList';
-import NameForm from './components/forms/nameForm';
+//import NameForm from './components/forms/nameForm';
+import StopWatcher from './components/stopWatcher';
 
 function App() {
 
@@ -20,10 +21,10 @@ function App() {
   const handleToggleClick = () => {
     setIsToggleOn(!isToggleOn);
   }; */
-  /* const [isLogedIn, setIsLogedIn] = useState(true);
+  const [isLogedIn, setIsLogedIn] = useState(true);
   const handleLoginClick = () => {
     setIsLogedIn(!isLogedIn);
-  }; */
+  };
   /* const messages = ['React', 'RReact', 'RRReact']; */
 
   return (
@@ -37,7 +38,10 @@ function App() {
       <button onClick={handleLoginClick}>{isLogedIn ? 'LogOut' : 'LogIn'}</button> */}
       {/* <MailBox unreadMessage={messages} /> */}
       {/* <NumberList /> */}
-      <NameForm />
+      {/* <NameForm /> */}
+      <Greeting isLoggedIn={isLogedIn} />
+      {isLogedIn ? <StopWatcher /> : null}
+      <button onClick={handleLoginClick}>{isLogedIn ? 'LogOut' : 'LogIn'}</button>
     </div>
   );
 }
